@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Backend API for Premium Natural Products MERN E-Commerce Store",
   "main": "server.js",
+  "license": "MIT",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
+    "build": "node -e \"console.log('Backend build completed successfully')\"",
     "seed": "node utils/seeder.js"
   },
   "dependencies": {

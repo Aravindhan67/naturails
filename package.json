@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Full MERN Stack E-Commerce Platform for Natural & Organic Products",
   "scripts": {
+    "start": "node backend/server.js",
     "server": "cd backend && npm start",
     "client": "cd frontend && npm run dev",
     "seed": "cd backend && npm run seed",
-    "build": "cd frontend && npm run build"
+    "build": "cd backend && npm install && node -e \"console.log('Backend ready')\"",
+    "build:client": "cd frontend && npm run build"
   },
   "keywords": [
     "mern",
