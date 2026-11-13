@@ -35,6 +35,11 @@ const userSchema = new mongoose.Schema(
       state: { type: String, default: '' },
       postalCode: { type: String, default: '' },
       country: { type: String, default: 'India' },
+      coordinates: {
+        lat: { type: Number },
+        lng: { type: Number },
+      },
+      googleMapsUrl: { type: String, default: '' },
     },
   },
   {

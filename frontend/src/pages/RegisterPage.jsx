@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
-import { User, Mail, Lock, Phone, MapPin, ArrowRight, AlertCircle } from 'lucide-react';
+import { User, Mail, Lock, Phone, MapPin, ArrowRight, AlertCircle, Navigation, CheckCircle2, ExternalLink } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { detectLiveLocation } from '../utils/locationService';
 
 export const RegisterPage = () => {
   const [formData, setFormData] = useState({
@@ -13,10 +14,15 @@ export const RegisterPage = () => {
     city: '',
     state: '',
     postalCode: '',
+    coordinates: null,
+    googleMapsUrl: '',
   });
 
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [detectingLocation, setDetectingLocation] = useState(false);
+  const [locationInfo, setLocationInfo] = useState(null);
+  const [locationError, setLocationError] = useState('');
 
   const { register } = useAuth();
   const navigate = useNavigate();
@@ -25,6 +31,34 @@ export const RegisterPage = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleGetLiveLocation = async () => {
+    setDetectingLocation(true);
+    setLocationError('');
+    try {
+      const res = await detectLiveLocation();
+      setFormData((prev) => ({
+        ...prev,
+        street: res.address.street || prev.street,
+        city: res.address.city || prev.city,
+        state: res.address.state || prev.state,
+        postalCode: res.address.postalCode || prev.postalCode,
+        coordinates: { lat: res.latitude, lng: res.longitude },
+        googleMapsUrl: res.googleMapsUrl,
+      }));
+      setLocationInfo({
+        city: res.address.city,
+        state: res.address.state,
+        latitude: res.latitude,
+        longitude: res.longitude,
+        googleMapsUrl: res.googleMapsUrl,
+      });
+    } catch (err) {
+      setLocationError(err.message || 'Could not fetch live location.');
+    } finally {
+      setDetectingLocation(false);
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -48,6 +82,8 @@ export const RegisterPage = () => {
           city: formData.city,
           state: formData.state,
           postalCode: formData.postalCode,
+          coordinates: formData.coordinates || undefined,
+          googleMapsUrl: formData.googleMapsUrl || '',
         },
       });
 
@@ -157,9 +193,50 @@ export const RegisterPage = () => {
 
           {/* Optional Delivery Address */}
           <div className="pt-2 border-t border-earth-100 space-y-3">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-stone-500 block">
-              Default Shipping Address (Optional)
-            </span>
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-stone-500 block">
+                Default Shipping Address (Optional)
+              </span>
+              <button
+                type="button"
+                onClick={handleGetLiveLocation}
+                disabled={detectingLocation}
+                className="inline-flex items-center gap-1.5 text-[11px] font-bold text-botanical-800 bg-botanical-100/80 hover:bg-botanical-200 border border-botanical-300 px-3 py-1 rounded-xl transition-all shadow-sm active:scale-95 disabled:bg-stone-100"
+                title="Detect GPS coordinates and auto-fill address"
+              >
+                <Navigation className={`w-3.5 h-3.5 ${detectingLocation ? 'animate-spin text-botanical-600' : 'text-botanical-700'}`} />
+                <span>{detectingLocation ? 'Detecting GPS...' : '📍 Auto-Detect Live Location'}</span>
+              </button>
+            </div>
+
+            {locationInfo && (
+              <div className="bg-emerald-50 border border-emerald-200 text-emerald-900 p-2.5 rounded-xl text-[11px] flex items-center justify-between gap-2">
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                  <span>
+                    <strong>Live Location:</strong> {locationInfo.city}, {locationInfo.state}
+                  </span>
+                </div>
+                {locationInfo.googleMapsUrl && (
+                  <a
+                    href={locationInfo.googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-700 hover:text-emerald-900 underline font-semibold flex items-center gap-1 whitespace-nowrap"
+                  >
+                    <span>Maps Pin</span>
+                    <ExternalLink className="w-2.5 h-2.5" />
+                  </a>
+                )}
+              </div>
+            )}
+
+            {locationError && (
+              <div className="bg-amber-50 border border-amber-200 text-amber-800 p-2.5 rounded-xl text-[11px] flex items-center gap-1.5">
+                <AlertCircle className="w-3.5 h-3.5 text-amber-600 flex-shrink-0" />
+                <span>{locationError}</span>
+              </div>
+            )}
 
             <div>
               <input

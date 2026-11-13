@@ -12,10 +12,14 @@ import {
   UserCheck,
   CheckCircle,
   MapPin,
+  Navigation,
+  CheckCircle2,
+  ExternalLink,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
 import { api } from '../api/api';
+import { detectLiveLocation } from '../utils/locationService';
 
 const INDIAN_STATES = [
   'Tamil Nadu',
@@ -55,6 +59,8 @@ export const CheckoutPage = () => {
     state: user?.address?.state || 'Tamil Nadu',
     postalCode: user?.address?.postalCode || '',
     country: 'India',
+    coordinates: user?.address?.coordinates || null,
+    googleMapsUrl: user?.address?.googleMapsUrl || '',
     paymentMethod: 'UPI',
     upiApp: 'Google Pay',
     upiId: '',
@@ -65,6 +71,46 @@ export const CheckoutPage = () => {
   const [showQrModal, setShowQrModal] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
+  const [detectingLocation, setDetectingLocation] = useState(false);
+  const [locationInfo, setLocationInfo] = useState(null);
+  const [locationError, setLocationError] = useState('');
+
+  const handleGetLiveLocation = async () => {
+    setDetectingLocation(true);
+    setLocationError('');
+    try {
+      const res = await detectLiveLocation();
+      const matchedState =
+        INDIAN_STATES.find(
+          (s) => s.toLowerCase() === (res.address.state || '').toLowerCase()
+        ) ||
+        res.address.state ||
+        formData.state;
+
+      setFormData((prev) => ({
+        ...prev,
+        street: res.address.street || prev.street,
+        landmark: res.address.landmark || prev.landmark,
+        city: res.address.city || prev.city,
+        state: matchedState,
+        postalCode: res.address.postalCode || prev.postalCode,
+        coordinates: { lat: res.latitude, lng: res.longitude },
+        googleMapsUrl: res.googleMapsUrl,
+      }));
+
+      setLocationInfo({
+        city: res.address.city,
+        state: matchedState,
+        latitude: res.latitude,
+        longitude: res.longitude,
+        googleMapsUrl: res.googleMapsUrl,
+      });
+    } catch (err) {
+      setLocationError(err.message || 'Could not fetch live location.');
+    } finally {
+      setDetectingLocation(false);
+    }
+  };
 
   useEffect(() => {
     if (cartItems.length === 0) {
@@ -118,10 +164,13 @@ export const CheckoutPage = () => {
         customerPhone: formData.customerPhone,
         shippingAddress: {
           street: formData.landmark ? `${formData.street} (Near ${formData.landmark})` : formData.street,
+          landmark: formData.landmark || '',
           city: formData.city,
           state: formData.state,
           postalCode: formData.postalCode,
           country: 'India',
+          coordinates: formData.coordinates || undefined,
+          googleMapsUrl: formData.googleMapsUrl || '',
         },
         paymentMethod: formData.paymentMethod,
         orderItems: cartItems.map((item) => ({
@@ -251,10 +300,60 @@ export const CheckoutPage = () => {
 
           {/* Shipping Address */}
           <div className="bg-white rounded-3xl border border-earth-200 p-6 sm:p-8 shadow-soft space-y-4">
-            <h2 className="font-serif text-lg font-bold text-botanical-900 pb-3 border-b border-earth-100 flex items-center justify-between">
-              <span>2. Indian Shipping Address</span>
-              <span className="text-[11px] font-normal text-stone-400">Pan-India Express</span>
-            </h2>
+            <div className="flex items-center justify-between pb-3 border-b border-earth-100 flex-wrap gap-2">
+              <div>
+                <h2 className="font-serif text-lg font-bold text-botanical-900">
+                  2. Indian Shipping Address
+                </h2>
+                <span className="text-[11px] font-normal text-stone-400">
+                  Pan-India Express Delivery
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={handleGetLiveLocation}
+                disabled={detectingLocation}
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-botanical-800 bg-botanical-100/90 hover:bg-botanical-200/90 border border-botanical-300 px-3.5 py-1.5 rounded-full transition-all shadow-sm active:scale-95 disabled:bg-stone-100"
+                title="Detect GPS coordinates and auto-fill address"
+              >
+                <Navigation
+                  className={`w-3.5 h-3.5 ${
+                    detectingLocation ? 'animate-spin text-botanical-600' : 'text-botanical-700'
+                  }`}
+                />
+                <span>{detectingLocation ? 'Fetching GPS...' : '📍 Auto-Detect Live Location'}</span>
+              </button>
+            </div>
+
+            {locationInfo && (
+              <div className="bg-emerald-50 border border-emerald-200 text-emerald-900 p-3 rounded-2xl text-xs flex items-center justify-between gap-3 animate-in fade-in">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                  <span>
+                    <strong>Live GPS Detected:</strong> {locationInfo.city}, {locationInfo.state} ({locationInfo.latitude.toFixed(4)}, {locationInfo.longitude.toFixed(4)})
+                  </span>
+                </div>
+                {locationInfo.googleMapsUrl && (
+                  <a
+                    href={locationInfo.googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-bold text-emerald-700 underline hover:text-emerald-900 whitespace-nowrap flex items-center gap-1"
+                  >
+                    <span>View Map</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                )}
+              </div>
+            )}
+
+            {locationError && (
+              <div className="bg-amber-50 border border-amber-200 text-amber-800 p-3 rounded-2xl text-xs flex items-center gap-2 animate-in fade-in">
+                <AlertCircle className="w-4 h-4 text-amber-600 flex-shrink-0" />
+                <span>{locationError}</span>
+              </div>
+            )}
+
             <div className="space-y-4">
               <div>
                 <label className="text-xs font-semibold text-stone-700 block mb-1">

@@ -535,6 +535,17 @@ export const AdminDashboardPage = () => {
                     <td className="py-4 px-6">
                       <p className="text-stone-700">{ord.shippingAddress?.city}, {ord.shippingAddress?.state}</p>
                       <p className="text-[11px] text-stone-400 font-mono">PIN: {ord.shippingAddress?.postalCode}</p>
+                      {ord.shippingAddress?.googleMapsUrl && (
+                        <a
+                          href={ord.shippingAddress.googleMapsUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 hover:text-emerald-900 mt-0.5 underline"
+                          title="Open Live GPS coordinates in Google Maps"
+                        >
+                          <span>📍 Live GPS Pin</span>
+                        </a>
+                      )}
                     </td>
                     <td className="py-4 px-6">
                       <span className="bg-earth-100 text-stone-800 px-2.5 py-1 rounded-md text-[11px] font-semibold">

@@ -49,10 +49,16 @@ const orderSchema = new mongoose.Schema(
     orderItems: [orderItemSchema],
     shippingAddress: {
       street: { type: String, required: true },
+      landmark: { type: String, default: '' },
       city: { type: String, required: true },
       state: { type: String, required: true },
       postalCode: { type: String, required: true },
       country: { type: String, default: 'India' },
+      coordinates: {
+        lat: { type: Number },
+        lng: { type: Number },
+      },
+      googleMapsUrl: { type: String, default: '' },
     },
     paymentMethod: {
       type: String,
