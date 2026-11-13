@@ -1,0 +1,446 @@
+{
+  "users": [
+    {
+      "_id": "usr_admin_001",
+      "name": "Botanical Store Admin",
+      "email": "admin@naturalis.com",
+      "password": "$2a$10$GTNDArjjhU6itwq703SFwuqUF9mHmAx/5i20SrJ8FDifLbxOhXiYe",
+      "role": "admin",
+      "phone": "+91 98765 43210",
+      "address": {
+        "street": "12 Organic Forest Way",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "postalCode": "560001",
+        "country": "India"
+      },
+      "createdAt": "2026-11-13T11:13:01.436Z"
+    },
+    {
+      "_id": "usr_demo_002",
+      "name": "Elena Vance",
+      "email": "elena@naturalis.com",
+      "password": "$2a$10$GTNDArjjhU6itwq703SFwuNnF3DvXUglwcPpJe8m4aIn2W9GwUhya",
+      "role": "user",
+      "phone": "+91 91234 56789",
+      "address": {
+        "street": "45 Green Meadow Lane",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "postalCode": "641001",
+        "country": "India"
+      },
+      "createdAt": "2026-11-13T11:13:01.440Z"
+    }
+  ],
+  "products": [
+    {
+      "_id": "prod_nat_001",
+      "name": "Rosehip & Jojoba Radiant Face Oil",
+      "category": "Skincare",
+      "price": 34.99,
+      "originalPrice": 42,
+      "volumeOrWeight": "50 ml / 1.7 fl oz",
+      "description": "A restorative, fast-absorbing botanical oil formulated with organic cold-pressed rosehip seed and wild-grown golden jojoba. Packed with antioxidants, essential fatty acids, and Vitamin C to restore youthful vibrancy and calm dry or sensitive skin.",
+      "ingredients": "Organic Rosa Canina (Rosehip) Seed Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Squalane, Tocopherol (Vitamin E), Frankincense Essential Oil.",
+      "benefits": [
+        "Deeply hydrates without clogging pores",
+        "Brightens uneven tone and softens fine lines",
+        "Soothes redness and strengthens natural lipid barrier"
+      ],
+      "certifications": [
+        "100% Organic",
+        "USDA Certified",
+        "Cruelty-Free",
+        "Cold-Pressed"
+      ],
+      "stock": 43,
+      "rating": 4.9,
+      "numReviews": 88,
+      "isFeatured": true,
+      "bestSeller": true,
+      "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bgGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FBF9F5%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23F1ECE1%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bottleGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%232D5A27%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%233F7538%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22softShadow%22%20x%3D%22-10%25%22%20y%3D%22-10%25%22%20width%3D%22130%25%22%20height%3D%22130%25%22%3E%0A%20%20%20%20%20%20%20%20%3CfeDropShadow%20dx%3D%220%22%20dy%3D%2218%22%20stdDeviation%3D%2215%22%20flood-color%3D%22%232D3A2F%22%20flood-opacity%3D%220.12%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Background%20--%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22600%22%20rx%3D%2224%22%20fill%3D%22url(%23bgGrad)%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Organic%20Ambient%20Circles%20--%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%22120%22%20r%3D%22140%22%20fill%3D%22%232D5A27%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22480%22%20cy%3D%22460%22%20r%3D%22160%22%20fill%3D%22%23C27351%22%20fill-opacity%3D%220.08%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%2050%20480%20Q%20200%20400%20350%20490%20T%20550%20470%22%20fill%3D%22none%22%20stroke%3D%22%232D5A27%22%20stroke-opacity%3D%220.1%22%20stroke-width%3D%222%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Botanical%20Motif%20Backing%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(180%2C%2080)%20scale(1.2)%22%20opacity%3D%220.15%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C80%20140%20120%2070%20150%2040%20C140%2090%20190%20120%20180%20180%20Z%22%20fill%3D%22%232D5A27%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C60%20160%2030%20110%2050%2060%20C80%2090%2090%20140%20100%20200%20Z%22%20fill%3D%22%233F7538%22%20%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Product%20Pedestal%20Shadow%20--%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22300%22%20cy%3D%22485%22%20rx%3D%22140%22%20ry%3D%2222%22%20fill%3D%22%232E382F%22%20opacity%3D%220.12%22%20filter%3D%22blur(8px)%22%20%2F%3E%0A%0A%20%20%20%20%3C!--%20Central%20Product%20Presentation%20--%3E%0A%20%20%20%20%3Cg%20filter%3D%22url(%23softShadow)%22%3E%0A%20%20%20%20%20%20%3C!--%20Main%20Vessel%20Container%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22220%22%20y%3D%22210%22%20width%3D%22160%22%20height%3D%22240%22%20rx%3D%2230%22%20fill%3D%22url(%23bottleGrad)%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Bottle%20Neck%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22260%22%20y%3D%22165%22%20width%3D%2280%22%20height%3D%2250%22%20rx%3D%2210%22%20fill%3D%22%233F7538%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Dropper%20%2F%20Cap%20Top%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22275%22%20y%3D%22125%22%20width%3D%2250%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%232B362A%22%20%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22115%22%20r%3D%2218%22%20fill%3D%22%23425540%22%20%2F%3E%0A%0A%20%20%20%20%20%20%3C!--%20Aesthetic%20Label%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22235%22%20y%3D%22245%22%20width%3D%22130%22%20height%3D%22170%22%20rx%3D%2212%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%220.95%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C!--%20Label%20Graphic%20Elements%20--%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22275%22%20r%3D%2214%22%20fill%3D%22%23C27351%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M300%20266%20C293%20274%20300%20282%20300%20286%20C300%20282%20307%20274%20300%20266%20Z%22%20fill%3D%22%23C27351%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-family%3D%22'Playfair%20Display'%2C%20Georgia%2C%20serif%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3EROSEHIP%20OIL%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22328%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22600%22%20fill%3D%22%23C27351%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%221.5%22%3E100%25%20ORGANIC%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22265%22%20y1%3D%22340%22%20x2%3D%22335%22%20y2%3D%22340%22%20stroke%3D%22%23E2DCD2%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22360%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%228%22%20fill%3D%22%236B786E%22%20text-anchor%3D%22middle%22%3EGolden%20Botanical%20Eli%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22390%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ENATURALIS%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Floating%20Herb%20Leaf%20Decoration%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(420%2C%20260)%20rotate(25)%22%20opacity%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2040%20C-20%2020%20-15%20-15%2020%20-30%20C25%205%2010%2030%200%2040%20Z%22%20fill%3D%22%232D5A27%22%20opacity%3D%220.6%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2240%22%20x2%3D%2216%22%20y2%3D%22-22%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221.5%22%20opacity%3D%220.5%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(130%2C%20360)%20rotate(-35)%22%20opacity%3D%220.7%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2030%20C-15%2015%20-10%20-10%2015%20-20%20C18%203%208%2022%200%2030%20Z%22%20fill%3D%22%23C27351%22%20opacity%3D%220.7%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fsvg%3E",
+      "createdAt": "2026-11-13T11:13:01.441Z"
+    },
+    {
+      "_id": "prod_nat_002",
+      "name": "Wild Turmeric & Raw Honey Clarifying Cleanser",
+      "category": "Skincare",
+      "price": 24.5,
+      "originalPrice": 29,
+      "volumeOrWeight": "150 ml / 5.1 fl oz",
+      "description": "Gently melts away impurities, pollutants, and makeup while nourishing the microbiome. Infused with wild-harvested golden turmeric root and raw forest honey for a dewy, glowing finish.",
+      "ingredients": "Aqua, Wild Kasturi Turmeric Extract, Raw Forest Honey, Aloe Barbadensis Leaf Juice, Decyl Glucoside, Vegetable Glycerin, Chamomile Extract.",
+      "benefits": [
+        "Purifies skin without stripping natural moisture",
+        "Naturally antibacterial turmeric calms breakouts",
+        "Leaves skin supple, soft, and luminous"
+      ],
+      "certifications": [
+        "100% Natural",
+        "Sulfate-Free",
+        "Ayurvedic Recipe",
+        "Vegan"
+      ],
+      "stock": 60,
+      "rating": 4.8,
+      "numReviews": 64,
+      "isFeatured": true,
+      "bestSeller": false,
+      "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bgGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FBF9F5%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23F1ECE1%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bottleGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23D9822B%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23B86614%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22softShadow%22%20x%3D%22-10%25%22%20y%3D%22-10%25%22%20width%3D%22130%25%22%20height%3D%22130%25%22%3E%0A%20%20%20%20%20%20%20%20%3CfeDropShadow%20dx%3D%220%22%20dy%3D%2218%22%20stdDeviation%3D%2215%22%20flood-color%3D%22%232D3A2F%22%20flood-opacity%3D%220.12%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Background%20--%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22600%22%20rx%3D%2224%22%20fill%3D%22url(%23bgGrad)%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Organic%20Ambient%20Circles%20--%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%22120%22%20r%3D%22140%22%20fill%3D%22%23D9822B%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22480%22%20cy%3D%22460%22%20r%3D%22160%22%20fill%3D%22%232D5A27%22%20fill-opacity%3D%220.08%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%2050%20480%20Q%20200%20400%20350%20490%20T%20550%20470%22%20fill%3D%22none%22%20stroke%3D%22%23D9822B%22%20stroke-opacity%3D%220.1%22%20stroke-width%3D%222%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Botanical%20Motif%20Backing%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(180%2C%2080)%20scale(1.2)%22%20opacity%3D%220.15%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C80%20140%20120%2070%20150%2040%20C140%2090%20190%20120%20180%20180%20Z%22%20fill%3D%22%23D9822B%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C60%20160%2030%20110%2050%2060%20C80%2090%2090%20140%20100%20200%20Z%22%20fill%3D%22%23B86614%22%20%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Product%20Pedestal%20Shadow%20--%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22300%22%20cy%3D%22485%22%20rx%3D%22140%22%20ry%3D%2222%22%20fill%3D%22%232E382F%22%20opacity%3D%220.12%22%20filter%3D%22blur(8px)%22%20%2F%3E%0A%0A%20%20%20%20%3C!--%20Central%20Product%20Presentation%20--%3E%0A%20%20%20%20%3Cg%20filter%3D%22url(%23softShadow)%22%3E%0A%20%20%20%20%20%20%3C!--%20Main%20Vessel%20Container%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22220%22%20y%3D%22210%22%20width%3D%22160%22%20height%3D%22240%22%20rx%3D%2230%22%20fill%3D%22url(%23bottleGrad)%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Bottle%20Neck%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22260%22%20y%3D%22165%22%20width%3D%2280%22%20height%3D%2250%22%20rx%3D%2210%22%20fill%3D%22%23B86614%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Dropper%20%2F%20Cap%20Top%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22275%22%20y%3D%22125%22%20width%3D%2250%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%232B362A%22%20%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22115%22%20r%3D%2218%22%20fill%3D%22%23425540%22%20%2F%3E%0A%0A%20%20%20%20%20%20%3C!--%20Aesthetic%20Label%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22235%22%20y%3D%22245%22%20width%3D%22130%22%20height%3D%22170%22%20rx%3D%2212%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%220.95%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C!--%20Label%20Graphic%20Elements%20--%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22275%22%20r%3D%2214%22%20fill%3D%22%232D5A27%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M300%20266%20C293%20274%20300%20282%20300%20286%20C300%20282%20307%20274%20300%20266%20Z%22%20fill%3D%22%232D5A27%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-family%3D%22'Playfair%20Display'%2C%20Georgia%2C%20serif%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ETURMERIC%20HONEY%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22328%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22600%22%20fill%3D%22%232D5A27%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%221.5%22%3E100%25%20ORGANIC%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22265%22%20y1%3D%22340%22%20x2%3D%22335%22%20y2%3D%22340%22%20stroke%3D%22%23E2DCD2%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22360%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%228%22%20fill%3D%22%236B786E%22%20text-anchor%3D%22middle%22%3EClarifying%20Cleanser%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22390%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ENATURALIS%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Floating%20Herb%20Leaf%20Decoration%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(420%2C%20260)%20rotate(25)%22%20opacity%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2040%20C-20%2020%20-15%20-15%2020%20-30%20C25%205%2010%2030%200%2040%20Z%22%20fill%3D%22%23D9822B%22%20opacity%3D%220.6%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2240%22%20x2%3D%2216%22%20y2%3D%22-22%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221.5%22%20opacity%3D%220.5%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(130%2C%20360)%20rotate(-35)%22%20opacity%3D%220.7%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2030%20C-15%2015%20-10%20-10%2015%20-20%20C18%203%208%2022%200%2030%20Z%22%20fill%3D%22%232D5A27%22%20opacity%3D%220.7%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fsvg%3E",
+      "createdAt": "2026-11-13T11:13:01.441Z"
+    },
+    {
+      "_id": "prod_nat_003",
+      "name": "Cold-Pressed Moroccan Argan & Rosemary Hair Serum",
+      "category": "Haircare",
+      "price": 29.99,
+      "originalPrice": 38,
+      "volumeOrWeight": "100 ml / 3.4 fl oz",
+      "description": "A nourishing elixir of pure virgin Moroccan argan kernel oil and steam-distilled rosemary leaf essential oil. Promotes hair follicle vitality, reduces breakage, and restores brilliant luster.",
+      "ingredients": "100% Pure Argania Spinosa (Argan) Kernel Oil, Rosmarinus Officinalis (Rosemary) Leaf Oil, Cedarwood Essential Oil, Sweet Almond Oil.",
+      "benefits": [
+        "Stimulates scalp micro-circulation for thicker hair",
+        "Tames frizz and flyaways with non-greasy silkiness",
+        "Protects against environmental and heat stress"
+      ],
+      "certifications": [
+        "Eco-Cert",
+        "Cold-Pressed",
+        "Zero Silicones",
+        "Cruelty-Free"
+      ],
+      "stock": 35,
+      "rating": 4.9,
+      "numReviews": 112,
+      "isFeatured": true,
+      "bestSeller": true,
+      "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bgGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FBF9F5%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23F1ECE1%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bottleGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%235A7341%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%233E532B%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22softShadow%22%20x%3D%22-10%25%22%20y%3D%22-10%25%22%20width%3D%22130%25%22%20height%3D%22130%25%22%3E%0A%20%20%20%20%20%20%20%20%3CfeDropShadow%20dx%3D%220%22%20dy%3D%2218%22%20stdDeviation%3D%2215%22%20flood-color%3D%22%232D3A2F%22%20flood-opacity%3D%220.12%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Background%20--%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22600%22%20rx%3D%2224%22%20fill%3D%22url(%23bgGrad)%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Organic%20Ambient%20Circles%20--%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%22120%22%20r%3D%22140%22%20fill%3D%22%235A7341%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22480%22%20cy%3D%22460%22%20r%3D%22160%22%20fill%3D%22%23D48B55%22%20fill-opacity%3D%220.08%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%2050%20480%20Q%20200%20400%20350%20490%20T%20550%20470%22%20fill%3D%22none%22%20stroke%3D%22%235A7341%22%20stroke-opacity%3D%220.1%22%20stroke-width%3D%222%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Botanical%20Motif%20Backing%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(180%2C%2080)%20scale(1.2)%22%20opacity%3D%220.15%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C80%20140%20120%2070%20150%2040%20C140%2090%20190%20120%20180%20180%20Z%22%20fill%3D%22%235A7341%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C60%20160%2030%20110%2050%2060%20C80%2090%2090%20140%20100%20200%20Z%22%20fill%3D%22%233E532B%22%20%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Product%20Pedestal%20Shadow%20--%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22300%22%20cy%3D%22485%22%20rx%3D%22140%22%20ry%3D%2222%22%20fill%3D%22%232E382F%22%20opacity%3D%220.12%22%20filter%3D%22blur(8px)%22%20%2F%3E%0A%0A%20%20%20%20%3C!--%20Central%20Product%20Presentation%20--%3E%0A%20%20%20%20%3Cg%20filter%3D%22url(%23softShadow)%22%3E%0A%20%20%20%20%20%20%3C!--%20Main%20Vessel%20Container%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22220%22%20y%3D%22210%22%20width%3D%22160%22%20height%3D%22240%22%20rx%3D%2230%22%20fill%3D%22url(%23bottleGrad)%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Bottle%20Neck%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22260%22%20y%3D%22165%22%20width%3D%2280%22%20height%3D%2250%22%20rx%3D%2210%22%20fill%3D%22%233E532B%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Dropper%20%2F%20Cap%20Top%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22275%22%20y%3D%22125%22%20width%3D%2250%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%232B362A%22%20%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22115%22%20r%3D%2218%22%20fill%3D%22%23425540%22%20%2F%3E%0A%0A%20%20%20%20%20%20%3C!--%20Aesthetic%20Label%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22235%22%20y%3D%22245%22%20width%3D%22130%22%20height%3D%22170%22%20rx%3D%2212%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%220.95%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C!--%20Label%20Graphic%20Elements%20--%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22275%22%20r%3D%2214%22%20fill%3D%22%23D48B55%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M300%20266%20C293%20274%20300%20282%20300%20286%20C300%20282%20307%20274%20300%20266%20Z%22%20fill%3D%22%23D48B55%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-family%3D%22'Playfair%20Display'%2C%20Georgia%2C%20serif%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3EARGAN%20%26%20ROSEMARY%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22328%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22600%22%20fill%3D%22%23D48B55%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%221.5%22%3E100%25%20ORGANIC%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22265%22%20y1%3D%22340%22%20x2%3D%22335%22%20y2%3D%22340%22%20stroke%3D%22%23E2DCD2%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22360%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%228%22%20fill%3D%22%236B786E%22%20text-anchor%3D%22middle%22%3EHair%20Vitality%20Serum%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22390%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ENATURALIS%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Floating%20Herb%20Leaf%20Decoration%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(420%2C%20260)%20rotate(25)%22%20opacity%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2040%20C-20%2020%20-15%20-15%2020%20-30%20C25%205%2010%2030%200%2040%20Z%22%20fill%3D%22%235A7341%22%20opacity%3D%220.6%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2240%22%20x2%3D%2216%22%20y2%3D%22-22%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221.5%22%20opacity%3D%220.5%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(130%2C%20360)%20rotate(-35)%22%20opacity%3D%220.7%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2030%20C-15%2015%20-10%20-10%2015%20-20%20C18%203%208%2022%200%2030%20Z%22%20fill%3D%22%23D48B55%22%20opacity%3D%220.7%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fsvg%3E",
+      "createdAt": "2026-11-13T11:13:01.441Z"
+    },
+    {
+      "_id": "prod_nat_004",
+      "name": "High-Altitude French Lavender Calming Essential Oil",
+      "category": "Essential Oils",
+      "price": 19.5,
+      "originalPrice": 24,
+      "volumeOrWeight": "15 ml / 0.5 fl oz",
+      "description": "Steam-distilled from organic Lavandula angustifolia grown in high-altitude Provence meadows. Delivers a peaceful floral aroma that relieves stress, balances mood, and enhances tranquil sleep.",
+      "ingredients": "100% Pure Lavandula Angustifolia (High-Altitude Lavender) Essential Oil.",
+      "benefits": [
+        "Promotes deep relaxation and restorative sleep",
+        "Can be diffused or blended into carrier oils",
+        "Known for natural skin-soothing qualities"
+      ],
+      "certifications": [
+        "Pure Therapeutic Grade",
+        "100% Steam Distilled",
+        "GC/MS Tested"
+      ],
+      "stock": 50,
+      "rating": 4.9,
+      "numReviews": 76,
+      "isFeatured": true,
+      "bestSeller": false,
+      "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bgGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FBF9F5%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23F1ECE1%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bottleGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%236E688A%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%234F496B%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22softShadow%22%20x%3D%22-10%25%22%20y%3D%22-10%25%22%20width%3D%22130%25%22%20height%3D%22130%25%22%3E%0A%20%20%20%20%20%20%20%20%3CfeDropShadow%20dx%3D%220%22%20dy%3D%2218%22%20stdDeviation%3D%2215%22%20flood-color%3D%22%232D3A2F%22%20flood-opacity%3D%220.12%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Background%20--%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22600%22%20rx%3D%2224%22%20fill%3D%22url(%23bgGrad)%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Organic%20Ambient%20Circles%20--%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%22120%22%20r%3D%22140%22%20fill%3D%22%236E688A%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22480%22%20cy%3D%22460%22%20r%3D%22160%22%20fill%3D%22%238FA888%22%20fill-opacity%3D%220.08%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%2050%20480%20Q%20200%20400%20350%20490%20T%20550%20470%22%20fill%3D%22none%22%20stroke%3D%22%236E688A%22%20stroke-opacity%3D%220.1%22%20stroke-width%3D%222%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Botanical%20Motif%20Backing%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(180%2C%2080)%20scale(1.2)%22%20opacity%3D%220.15%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C80%20140%20120%2070%20150%2040%20C140%2090%20190%20120%20180%20180%20Z%22%20fill%3D%22%236E688A%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C60%20160%2030%20110%2050%2060%20C80%2090%2090%20140%20100%20200%20Z%22%20fill%3D%22%234F496B%22%20%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Product%20Pedestal%20Shadow%20--%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22300%22%20cy%3D%22485%22%20rx%3D%22140%22%20ry%3D%2222%22%20fill%3D%22%232E382F%22%20opacity%3D%220.12%22%20filter%3D%22blur(8px)%22%20%2F%3E%0A%0A%20%20%20%20%3C!--%20Central%20Product%20Presentation%20--%3E%0A%20%20%20%20%3Cg%20filter%3D%22url(%23softShadow)%22%3E%0A%20%20%20%20%20%20%3C!--%20Main%20Vessel%20Container%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22220%22%20y%3D%22210%22%20width%3D%22160%22%20height%3D%22240%22%20rx%3D%2230%22%20fill%3D%22url(%23bottleGrad)%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Bottle%20Neck%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22260%22%20y%3D%22165%22%20width%3D%2280%22%20height%3D%2250%22%20rx%3D%2210%22%20fill%3D%22%234F496B%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Dropper%20%2F%20Cap%20Top%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22275%22%20y%3D%22125%22%20width%3D%2250%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%232B362A%22%20%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22115%22%20r%3D%2218%22%20fill%3D%22%23425540%22%20%2F%3E%0A%0A%20%20%20%20%20%20%3C!--%20Aesthetic%20Label%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22235%22%20y%3D%22245%22%20width%3D%22130%22%20height%3D%22170%22%20rx%3D%2212%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%220.95%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C!--%20Label%20Graphic%20Elements%20--%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22275%22%20r%3D%2214%22%20fill%3D%22%238FA888%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M300%20266%20C293%20274%20300%20282%20300%20286%20C300%20282%20307%20274%20300%20266%20Z%22%20fill%3D%22%238FA888%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-family%3D%22'Playfair%20Display'%2C%20Georgia%2C%20serif%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3EPURE%20LAVENDER%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22328%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22600%22%20fill%3D%22%238FA888%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%221.5%22%3E100%25%20ORGANIC%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22265%22%20y1%3D%22340%22%20x2%3D%22335%22%20y2%3D%22340%22%20stroke%3D%22%23E2DCD2%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22360%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%228%22%20fill%3D%22%236B786E%22%20text-anchor%3D%22middle%22%3ETherapeutic%20Grade%20Oi%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22390%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ENATURALIS%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Floating%20Herb%20Leaf%20Decoration%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(420%2C%20260)%20rotate(25)%22%20opacity%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2040%20C-20%2020%20-15%20-15%2020%20-30%20C25%205%2010%2030%200%2040%20Z%22%20fill%3D%22%236E688A%22%20opacity%3D%220.6%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2240%22%20x2%3D%2216%22%20y2%3D%22-22%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221.5%22%20opacity%3D%220.5%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(130%2C%20360)%20rotate(-35)%22%20opacity%3D%220.7%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2030%20C-15%2015%20-10%20-10%2015%20-20%20C18%203%208%2022%200%2030%20Z%22%20fill%3D%22%238FA888%22%20opacity%3D%220.7%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fsvg%3E",
+      "createdAt": "2026-11-13T11:13:01.441Z"
+    },
+    {
+      "_id": "prod_nat_005",
+      "name": "Handcrafted Activated Charcoal & Tea Tree Bar",
+      "category": "Handmade Soaps",
+      "price": 12,
+      "originalPrice": 15,
+      "volumeOrWeight": "120 g / 4.2 oz",
+      "description": "Cold-process artisan soap cure-aged for 6 weeks. Bamboo activated charcoal detoxifies pore buildup while Australian tea tree and eucalyptus essential oils leave skin refreshingly clean.",
+      "ingredients": "Saponified Oils of Olive, Coconut, and Sustainable Palm, Bamboo Activated Charcoal, Tea Tree Oil, Eucalyptus Leaf Oil, Shea Butter.",
+      "benefits": [
+        "Draws out deep-seated impurities and excess sebum",
+        "Gentle rich lather that doesn't dehydrate the skin",
+        "100% biodegradable and zero plastic packaging"
+      ],
+      "certifications": [
+        "Handcrafted",
+        "Zero Waste",
+        "Plastic-Free",
+        "Palm Safe"
+      ],
+      "stock": 80,
+      "rating": 4.7,
+      "numReviews": 43,
+      "isFeatured": false,
+      "bestSeller": true,
+      "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bgGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FBF9F5%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23F1ECE1%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bottleGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23353D37%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231E2420%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22softShadow%22%20x%3D%22-10%25%22%20y%3D%22-10%25%22%20width%3D%22130%25%22%20height%3D%22130%25%22%3E%0A%20%20%20%20%20%20%20%20%3CfeDropShadow%20dx%3D%220%22%20dy%3D%2218%22%20stdDeviation%3D%2215%22%20flood-color%3D%22%232D3A2F%22%20flood-opacity%3D%220.12%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Background%20--%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22600%22%20rx%3D%2224%22%20fill%3D%22url(%23bgGrad)%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Organic%20Ambient%20Circles%20--%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%22120%22%20r%3D%22140%22%20fill%3D%22%23353D37%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22480%22%20cy%3D%22460%22%20r%3D%22160%22%20fill%3D%22%237BB078%22%20fill-opacity%3D%220.08%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%2050%20480%20Q%20200%20400%20350%20490%20T%20550%20470%22%20fill%3D%22none%22%20stroke%3D%22%23353D37%22%20stroke-opacity%3D%220.1%22%20stroke-width%3D%222%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Botanical%20Motif%20Backing%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(180%2C%2080)%20scale(1.2)%22%20opacity%3D%220.15%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C80%20140%20120%2070%20150%2040%20C140%2090%20190%20120%20180%20180%20Z%22%20fill%3D%22%23353D37%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C60%20160%2030%20110%2050%2060%20C80%2090%2090%20140%20100%20200%20Z%22%20fill%3D%22%231E2420%22%20%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Product%20Pedestal%20Shadow%20--%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22300%22%20cy%3D%22485%22%20rx%3D%22140%22%20ry%3D%2222%22%20fill%3D%22%232E382F%22%20opacity%3D%220.12%22%20filter%3D%22blur(8px)%22%20%2F%3E%0A%0A%20%20%20%20%3C!--%20Central%20Product%20Presentation%20--%3E%0A%20%20%20%20%3Cg%20filter%3D%22url(%23softShadow)%22%3E%0A%20%20%20%20%20%20%3C!--%20Main%20Vessel%20Container%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22220%22%20y%3D%22210%22%20width%3D%22160%22%20height%3D%22240%22%20rx%3D%2230%22%20fill%3D%22url(%23bottleGrad)%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Bottle%20Neck%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22260%22%20y%3D%22165%22%20width%3D%2280%22%20height%3D%2250%22%20rx%3D%2210%22%20fill%3D%22%231E2420%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Dropper%20%2F%20Cap%20Top%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22275%22%20y%3D%22125%22%20width%3D%2250%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%232B362A%22%20%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22115%22%20r%3D%2218%22%20fill%3D%22%23425540%22%20%2F%3E%0A%0A%20%20%20%20%20%20%3C!--%20Aesthetic%20Label%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22235%22%20y%3D%22245%22%20width%3D%22130%22%20height%3D%22170%22%20rx%3D%2212%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%220.95%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C!--%20Label%20Graphic%20Elements%20--%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22275%22%20r%3D%2214%22%20fill%3D%22%237BB078%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M300%20266%20C293%20274%20300%20282%20300%20286%20C300%20282%20307%20274%20300%20266%20Z%22%20fill%3D%22%237BB078%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-family%3D%22'Playfair%20Display'%2C%20Georgia%2C%20serif%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ECHARCOAL%20%26%20MINT%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22328%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22600%22%20fill%3D%22%237BB078%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%221.5%22%3E100%25%20ORGANIC%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22265%22%20y1%3D%22340%22%20x2%3D%22335%22%20y2%3D%22340%22%20stroke%3D%22%23E2DCD2%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22360%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%228%22%20fill%3D%22%236B786E%22%20text-anchor%3D%22middle%22%3EArtisan%20Detox%20Bar%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22390%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ENATURALIS%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Floating%20Herb%20Leaf%20Decoration%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(420%2C%20260)%20rotate(25)%22%20opacity%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2040%20C-20%2020%20-15%20-15%2020%20-30%20C25%205%2010%2030%200%2040%20Z%22%20fill%3D%22%23353D37%22%20opacity%3D%220.6%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2240%22%20x2%3D%2216%22%20y2%3D%22-22%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221.5%22%20opacity%3D%220.5%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(130%2C%20360)%20rotate(-35)%22%20opacity%3D%220.7%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2030%20C-15%2015%20-10%20-10%2015%20-20%20C18%203%208%2022%200%2030%20Z%22%20fill%3D%22%237BB078%22%20opacity%3D%220.7%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fsvg%3E",
+      "createdAt": "2026-11-13T11:13:01.441Z"
+    },
+    {
+      "_id": "prod_nat_006",
+      "name": "Organic Chamomile & Ashwagandha Restorative Tea",
+      "category": "Wellness & Teas",
+      "price": 18,
+      "originalPrice": 22,
+      "volumeOrWeight": "75 g loose leaf / ~35 cups",
+      "description": "A calming herbal infusion blending whole Egyptian chamomile blossoms with adaptogenic wild ashwagandha root, spearmint, and organic licorice. Designed to unwind nervous tension.",
+      "ingredients": "Organic Whole Chamomile Flowers, Withania Somnifera (Ashwagandha) Root, Spearmint Leaves, Licorice Root, Cardamom Pods.",
+      "benefits": [
+        "Supports adaptogenic stress resilience and evening wind-down",
+        "Caffeine-free soothing botanical tea",
+        "Warm, naturally sweet floral tasting notes"
+      ],
+      "certifications": [
+        "100% Organic",
+        "Direct Trade Herbs",
+        "Non-GMO",
+        "Caffeine-Free"
+      ],
+      "stock": 40,
+      "rating": 4.9,
+      "numReviews": 57,
+      "isFeatured": true,
+      "bestSeller": false,
+      "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bgGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FBF9F5%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23F1ECE1%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bottleGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23B58A38%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%238C651A%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22softShadow%22%20x%3D%22-10%25%22%20y%3D%22-10%25%22%20width%3D%22130%25%22%20height%3D%22130%25%22%3E%0A%20%20%20%20%20%20%20%20%3CfeDropShadow%20dx%3D%220%22%20dy%3D%2218%22%20stdDeviation%3D%2215%22%20flood-color%3D%22%232D3A2F%22%20flood-opacity%3D%220.12%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Background%20--%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22600%22%20rx%3D%2224%22%20fill%3D%22url(%23bgGrad)%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Organic%20Ambient%20Circles%20--%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%22120%22%20r%3D%22140%22%20fill%3D%22%23B58A38%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22480%22%20cy%3D%22460%22%20r%3D%22160%22%20fill%3D%22%233A6335%22%20fill-opacity%3D%220.08%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%2050%20480%20Q%20200%20400%20350%20490%20T%20550%20470%22%20fill%3D%22none%22%20stroke%3D%22%23B58A38%22%20stroke-opacity%3D%220.1%22%20stroke-width%3D%222%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Botanical%20Motif%20Backing%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(180%2C%2080)%20scale(1.2)%22%20opacity%3D%220.15%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C80%20140%20120%2070%20150%2040%20C140%2090%20190%20120%20180%20180%20Z%22%20fill%3D%22%23B58A38%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C60%20160%2030%20110%2050%2060%20C80%2090%2090%20140%20100%20200%20Z%22%20fill%3D%22%238C651A%22%20%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Product%20Pedestal%20Shadow%20--%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22300%22%20cy%3D%22485%22%20rx%3D%22140%22%20ry%3D%2222%22%20fill%3D%22%232E382F%22%20opacity%3D%220.12%22%20filter%3D%22blur(8px)%22%20%2F%3E%0A%0A%20%20%20%20%3C!--%20Central%20Product%20Presentation%20--%3E%0A%20%20%20%20%3Cg%20filter%3D%22url(%23softShadow)%22%3E%0A%20%20%20%20%20%20%3C!--%20Main%20Vessel%20Container%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22220%22%20y%3D%22210%22%20width%3D%22160%22%20height%3D%22240%22%20rx%3D%2230%22%20fill%3D%22url(%23bottleGrad)%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Bottle%20Neck%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22260%22%20y%3D%22165%22%20width%3D%2280%22%20height%3D%2250%22%20rx%3D%2210%22%20fill%3D%22%238C651A%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Dropper%20%2F%20Cap%20Top%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22275%22%20y%3D%22125%22%20width%3D%2250%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%232B362A%22%20%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22115%22%20r%3D%2218%22%20fill%3D%22%23425540%22%20%2F%3E%0A%0A%20%20%20%20%20%20%3C!--%20Aesthetic%20Label%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22235%22%20y%3D%22245%22%20width%3D%22130%22%20height%3D%22170%22%20rx%3D%2212%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%220.95%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C!--%20Label%20Graphic%20Elements%20--%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22275%22%20r%3D%2214%22%20fill%3D%22%233A6335%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M300%20266%20C293%20274%20300%20282%20300%20286%20C300%20282%20307%20274%20300%20266%20Z%22%20fill%3D%22%233A6335%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-family%3D%22'Playfair%20Display'%2C%20Georgia%2C%20serif%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ECHAMOMILE%20TEA%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22328%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22600%22%20fill%3D%22%233A6335%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%221.5%22%3E100%25%20ORGANIC%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22265%22%20y1%3D%22340%22%20x2%3D%22335%22%20y2%3D%22340%22%20stroke%3D%22%23E2DCD2%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22360%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%228%22%20fill%3D%22%236B786E%22%20text-anchor%3D%22middle%22%3EAdaptogen%20Herbal%20Ble%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22390%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ENATURALIS%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Floating%20Herb%20Leaf%20Decoration%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(420%2C%20260)%20rotate(25)%22%20opacity%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2040%20C-20%2020%20-15%20-15%2020%20-30%20C25%205%2010%2030%200%2040%20Z%22%20fill%3D%22%23B58A38%22%20opacity%3D%220.6%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2240%22%20x2%3D%2216%22%20y2%3D%22-22%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221.5%22%20opacity%3D%220.5%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(130%2C%20360)%20rotate(-35)%22%20opacity%3D%220.7%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2030%20C-15%2015%20-10%20-10%2015%20-20%20C18%203%208%2022%200%2030%20Z%22%20fill%3D%22%233A6335%22%20opacity%3D%220.7%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fsvg%3E",
+      "createdAt": "2026-11-13T11:13:01.441Z"
+    },
+    {
+      "_id": "prod_nat_007",
+      "name": "Raw Whipped Shea & Kokum Botanical Body Butter",
+      "category": "Body Care",
+      "price": 26,
+      "originalPrice": 32,
+      "volumeOrWeight": "200 ml / 6.8 oz",
+      "description": "Decadently whipped unrefined Ghanaian shea butter and Indian kokum butter infused with sweet almond and vanilla bean oil. Melts into contact to deeply condition very dry patches.",
+      "ingredients": "Unrefined Butyrospermum Parkii (Shea) Butter, Garcinia Indica (Kokum) Butter, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Vanilla Planifolia Oleoresin.",
+      "benefits": [
+        "24-hour long-lasting skin moisture replenishment",
+        "Smooths rough elbows, knees, and dry heels",
+        "Subtle natural gourmand scent from pure vanilla bean"
+      ],
+      "certifications": [
+        "Fair Trade Shea",
+        "Raw & Unrefined",
+        "Cruelty-Free"
+      ],
+      "stock": 30,
+      "rating": 4.8,
+      "numReviews": 39,
+      "isFeatured": false,
+      "bestSeller": false,
+      "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bgGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FBF9F5%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23F1ECE1%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bottleGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23A87A5B%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%237D5438%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22softShadow%22%20x%3D%22-10%25%22%20y%3D%22-10%25%22%20width%3D%22130%25%22%20height%3D%22130%25%22%3E%0A%20%20%20%20%20%20%20%20%3CfeDropShadow%20dx%3D%220%22%20dy%3D%2218%22%20stdDeviation%3D%2215%22%20flood-color%3D%22%232D3A2F%22%20flood-opacity%3D%220.12%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Background%20--%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22600%22%20rx%3D%2224%22%20fill%3D%22url(%23bgGrad)%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Organic%20Ambient%20Circles%20--%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%22120%22%20r%3D%22140%22%20fill%3D%22%23A87A5B%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22480%22%20cy%3D%22460%22%20r%3D%22160%22%20fill%3D%22%232E5528%22%20fill-opacity%3D%220.08%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%2050%20480%20Q%20200%20400%20350%20490%20T%20550%20470%22%20fill%3D%22none%22%20stroke%3D%22%23A87A5B%22%20stroke-opacity%3D%220.1%22%20stroke-width%3D%222%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Botanical%20Motif%20Backing%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(180%2C%2080)%20scale(1.2)%22%20opacity%3D%220.15%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C80%20140%20120%2070%20150%2040%20C140%2090%20190%20120%20180%20180%20Z%22%20fill%3D%22%23A87A5B%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C60%20160%2030%20110%2050%2060%20C80%2090%2090%20140%20100%20200%20Z%22%20fill%3D%22%237D5438%22%20%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Product%20Pedestal%20Shadow%20--%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22300%22%20cy%3D%22485%22%20rx%3D%22140%22%20ry%3D%2222%22%20fill%3D%22%232E382F%22%20opacity%3D%220.12%22%20filter%3D%22blur(8px)%22%20%2F%3E%0A%0A%20%20%20%20%3C!--%20Central%20Product%20Presentation%20--%3E%0A%20%20%20%20%3Cg%20filter%3D%22url(%23softShadow)%22%3E%0A%20%20%20%20%20%20%3C!--%20Main%20Vessel%20Container%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22220%22%20y%3D%22210%22%20width%3D%22160%22%20height%3D%22240%22%20rx%3D%2230%22%20fill%3D%22url(%23bottleGrad)%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Bottle%20Neck%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22260%22%20y%3D%22165%22%20width%3D%2280%22%20height%3D%2250%22%20rx%3D%2210%22%20fill%3D%22%237D5438%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Dropper%20%2F%20Cap%20Top%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22275%22%20y%3D%22125%22%20width%3D%2250%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%232B362A%22%20%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22115%22%20r%3D%2218%22%20fill%3D%22%23425540%22%20%2F%3E%0A%0A%20%20%20%20%20%20%3C!--%20Aesthetic%20Label%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22235%22%20y%3D%22245%22%20width%3D%22130%22%20height%3D%22170%22%20rx%3D%2212%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%220.95%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C!--%20Label%20Graphic%20Elements%20--%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22275%22%20r%3D%2214%22%20fill%3D%22%232E5528%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M300%20266%20C293%20274%20300%20282%20300%20286%20C300%20282%20307%20274%20300%20266%20Z%22%20fill%3D%22%232E5528%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-family%3D%22'Playfair%20Display'%2C%20Georgia%2C%20serif%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ERAW%20SHEA%20BUTTER%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22328%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22600%22%20fill%3D%22%232E5528%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%221.5%22%3E100%25%20ORGANIC%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22265%22%20y1%3D%22340%22%20x2%3D%22335%22%20y2%3D%22340%22%20stroke%3D%22%23E2DCD2%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22360%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%228%22%20fill%3D%22%236B786E%22%20text-anchor%3D%22middle%22%3EWhipped%20Body%20Creme%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22390%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ENATURALIS%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Floating%20Herb%20Leaf%20Decoration%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(420%2C%20260)%20rotate(25)%22%20opacity%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2040%20C-20%2020%20-15%20-15%2020%20-30%20C25%205%2010%2030%200%2040%20Z%22%20fill%3D%22%23A87A5B%22%20opacity%3D%220.6%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2240%22%20x2%3D%2216%22%20y2%3D%22-22%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221.5%22%20opacity%3D%220.5%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(130%2C%20360)%20rotate(-35)%22%20opacity%3D%220.7%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2030%20C-15%2015%20-10%20-10%2015%20-20%20C18%203%208%2022%200%2030%20Z%22%20fill%3D%22%232E5528%22%20opacity%3D%220.7%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fsvg%3E",
+      "createdAt": "2026-11-13T11:13:01.441Z"
+    },
+    {
+      "_id": "prod_nat_008",
+      "name": "Neem & Holy Basil (Tulsi) Clarifying Face Gel",
+      "category": "Skincare",
+      "price": 22,
+      "originalPrice": 26,
+      "volumeOrWeight": "100 ml / 3.4 fl oz",
+      "description": "Lightweight, cooling oil-free gel crafted with active fresh aloe vera fillet, bio-fermented neem leaf extract, and organic holy basil (Tulsi) for clear, balanced skin.",
+      "ingredients": "Pure Aloe Barbadensis Leaf Juice, Azadirachta Indica (Neem) Leaf Extract, Ocimum Sanctum (Tulsi) Extract, Niacinamide, Sodium Hyaluronate.",
+      "benefits": [
+        "Instantly cools inflammation and reduces shine",
+        "Lightweight hydration perfect for warm weather",
+        "Restores crystal clarity to blemish-prone complexions"
+      ],
+      "certifications": [
+        "Oil-Free",
+        "Non-Comedogenic",
+        "100% Vegan",
+        "Ayurvedic"
+      ],
+      "stock": 55,
+      "rating": 4.8,
+      "numReviews": 51,
+      "isFeatured": false,
+      "bestSeller": true,
+      "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bgGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FBF9F5%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23F1ECE1%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bottleGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233A6B3E%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23274F2A%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22softShadow%22%20x%3D%22-10%25%22%20y%3D%22-10%25%22%20width%3D%22130%25%22%20height%3D%22130%25%22%3E%0A%20%20%20%20%20%20%20%20%3CfeDropShadow%20dx%3D%220%22%20dy%3D%2218%22%20stdDeviation%3D%2215%22%20flood-color%3D%22%232D3A2F%22%20flood-opacity%3D%220.12%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Background%20--%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22600%22%20rx%3D%2224%22%20fill%3D%22url(%23bgGrad)%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Organic%20Ambient%20Circles%20--%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%22120%22%20r%3D%22140%22%20fill%3D%22%233A6B3E%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22480%22%20cy%3D%22460%22%20r%3D%22160%22%20fill%3D%22%23C27351%22%20fill-opacity%3D%220.08%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%2050%20480%20Q%20200%20400%20350%20490%20T%20550%20470%22%20fill%3D%22none%22%20stroke%3D%22%233A6B3E%22%20stroke-opacity%3D%220.1%22%20stroke-width%3D%222%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Botanical%20Motif%20Backing%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(180%2C%2080)%20scale(1.2)%22%20opacity%3D%220.15%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C80%20140%20120%2070%20150%2040%20C140%2090%20190%20120%20180%20180%20Z%22%20fill%3D%22%233A6B3E%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C60%20160%2030%20110%2050%2060%20C80%2090%2090%20140%20100%20200%20Z%22%20fill%3D%22%23274F2A%22%20%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Product%20Pedestal%20Shadow%20--%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22300%22%20cy%3D%22485%22%20rx%3D%22140%22%20ry%3D%2222%22%20fill%3D%22%232E382F%22%20opacity%3D%220.12%22%20filter%3D%22blur(8px)%22%20%2F%3E%0A%0A%20%20%20%20%3C!--%20Central%20Product%20Presentation%20--%3E%0A%20%20%20%20%3Cg%20filter%3D%22url(%23softShadow)%22%3E%0A%20%20%20%20%20%20%3C!--%20Main%20Vessel%20Container%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22220%22%20y%3D%22210%22%20width%3D%22160%22%20height%3D%22240%22%20rx%3D%2230%22%20fill%3D%22url(%23bottleGrad)%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Bottle%20Neck%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22260%22%20y%3D%22165%22%20width%3D%2280%22%20height%3D%2250%22%20rx%3D%2210%22%20fill%3D%22%23274F2A%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Dropper%20%2F%20Cap%20Top%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22275%22%20y%3D%22125%22%20width%3D%2250%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%232B362A%22%20%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22115%22%20r%3D%2218%22%20fill%3D%22%23425540%22%20%2F%3E%0A%0A%20%20%20%20%20%20%3C!--%20Aesthetic%20Label%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22235%22%20y%3D%22245%22%20width%3D%22130%22%20height%3D%22170%22%20rx%3D%2212%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%220.95%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C!--%20Label%20Graphic%20Elements%20--%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22275%22%20r%3D%2214%22%20fill%3D%22%23C27351%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M300%20266%20C293%20274%20300%20282%20300%20286%20C300%20282%20307%20274%20300%20266%20Z%22%20fill%3D%22%23C27351%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-family%3D%22'Playfair%20Display'%2C%20Georgia%2C%20serif%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ENEEM%20%26%20TULSI%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22328%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22600%22%20fill%3D%22%23C27351%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%221.5%22%3E100%25%20ORGANIC%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22265%22%20y1%3D%22340%22%20x2%3D%22335%22%20y2%3D%22340%22%20stroke%3D%22%23E2DCD2%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22360%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%228%22%20fill%3D%22%236B786E%22%20text-anchor%3D%22middle%22%3EPurifying%20Hydro-Gel%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22390%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ENATURALIS%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Floating%20Herb%20Leaf%20Decoration%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(420%2C%20260)%20rotate(25)%22%20opacity%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2040%20C-20%2020%20-15%20-15%2020%20-30%20C25%205%2010%2030%200%2040%20Z%22%20fill%3D%22%233A6B3E%22%20opacity%3D%220.6%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2240%22%20x2%3D%2216%22%20y2%3D%22-22%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221.5%22%20opacity%3D%220.5%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(130%2C%20360)%20rotate(-35)%22%20opacity%3D%220.7%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2030%20C-15%2015%20-10%20-10%2015%20-20%20C18%203%208%2022%200%2030%20Z%22%20fill%3D%22%23C27351%22%20opacity%3D%220.7%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fsvg%3E",
+      "createdAt": "2026-11-13T11:13:01.441Z"
+    }
+  ],
+  "orders": [
+    {
+      "_id": "ord_1794568968858_355",
+      "orderId": "NAT-20261113-3506",
+      "user": "usr_demo_002",
+      "customerName": "Elena Vance",
+      "customerEmail": "elena@naturalis.com",
+      "customerPhone": "+91 91234 56789",
+      "orderItems": [
+        {
+          "product": "prod_nat_001",
+          "name": "Rosehip & Jojoba Radiant Face Oil",
+          "qty": 2,
+          "price": 34.99,
+          "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bgGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FBF9F5%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23F1ECE1%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bottleGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%232D5A27%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%233F7538%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22softShadow%22%20x%3D%22-10%25%22%20y%3D%22-10%25%22%20width%3D%22130%25%22%20height%3D%22130%25%22%3E%0A%20%20%20%20%20%20%20%20%3CfeDropShadow%20dx%3D%220%22%20dy%3D%2218%22%20stdDeviation%3D%2215%22%20flood-color%3D%22%232D3A2F%22%20flood-opacity%3D%220.12%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Background%20--%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22600%22%20rx%3D%2224%22%20fill%3D%22url(%23bgGrad)%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Organic%20Ambient%20Circles%20--%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%22120%22%20r%3D%22140%22%20fill%3D%22%232D5A27%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22480%22%20cy%3D%22460%22%20r%3D%22160%22%20fill%3D%22%23C27351%22%20fill-opacity%3D%220.08%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%2050%20480%20Q%20200%20400%20350%20490%20T%20550%20470%22%20fill%3D%22none%22%20stroke%3D%22%232D5A27%22%20stroke-opacity%3D%220.1%22%20stroke-width%3D%222%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Botanical%20Motif%20Backing%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(180%2C%2080)%20scale(1.2)%22%20opacity%3D%220.15%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C80%20140%20120%2070%20150%2040%20C140%2090%20190%20120%20180%20180%20Z%22%20fill%3D%22%232D5A27%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C60%20160%2030%20110%2050%2060%20C80%2090%2090%20140%20100%20200%20Z%22%20fill%3D%22%233F7538%22%20%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Product%20Pedestal%20Shadow%20--%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22300%22%20cy%3D%22485%22%20rx%3D%22140%22%20ry%3D%2222%22%20fill%3D%22%232E382F%22%20opacity%3D%220.12%22%20filter%3D%22blur(8px)%22%20%2F%3E%0A%0A%20%20%20%20%3C!--%20Central%20Product%20Presentation%20--%3E%0A%20%20%20%20%3Cg%20filter%3D%22url(%23softShadow)%22%3E%0A%20%20%20%20%20%20%3C!--%20Main%20Vessel%20Container%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22220%22%20y%3D%22210%22%20width%3D%22160%22%20height%3D%22240%22%20rx%3D%2230%22%20fill%3D%22url(%23bottleGrad)%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Bottle%20Neck%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22260%22%20y%3D%22165%22%20width%3D%2280%22%20height%3D%2250%22%20rx%3D%2210%22%20fill%3D%22%233F7538%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Dropper%20%2F%20Cap%20Top%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22275%22%20y%3D%22125%22%20width%3D%2250%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%232B362A%22%20%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22115%22%20r%3D%2218%22%20fill%3D%22%23425540%22%20%2F%3E%0A%0A%20%20%20%20%20%20%3C!--%20Aesthetic%20Label%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22235%22%20y%3D%22245%22%20width%3D%22130%22%20height%3D%22170%22%20rx%3D%2212%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%220.95%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C!--%20Label%20Graphic%20Elements%20--%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22275%22%20r%3D%2214%22%20fill%3D%22%23C27351%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M300%20266%20C293%20274%20300%20282%20300%20286%20C300%20282%20307%20274%20300%20266%20Z%22%20fill%3D%22%23C27351%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-family%3D%22'Playfair%20Display'%2C%20Georgia%2C%20serif%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3EROSEHIP%20OIL%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22328%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22600%22%20fill%3D%22%23C27351%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%221.5%22%3E100%25%20ORGANIC%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22265%22%20y1%3D%22340%22%20x2%3D%22335%22%20y2%3D%22340%22%20stroke%3D%22%23E2DCD2%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22360%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%228%22%20fill%3D%22%236B786E%22%20text-anchor%3D%22middle%22%3EGolden%20Botanical%20Eli%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22390%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ENATURALIS%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Floating%20Herb%20Leaf%20Decoration%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(420%2C%20260)%20rotate(25)%22%20opacity%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2040%20C-20%2020%20-15%20-15%2020%20-30%20C25%205%2010%2030%200%2040%20Z%22%20fill%3D%22%232D5A27%22%20opacity%3D%220.6%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2240%22%20x2%3D%2216%22%20y2%3D%22-22%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221.5%22%20opacity%3D%220.5%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(130%2C%20360)%20rotate(-35)%22%20opacity%3D%220.7%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2030%20C-15%2015%20-10%20-10%2015%20-20%20C18%203%208%2022%200%2030%20Z%22%20fill%3D%22%23C27351%22%20opacity%3D%220.7%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fsvg%3E"
+        }
+      ],
+      "shippingAddress": {
+        "street": "45 Green Meadow Lane",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "postalCode": "641001"
+      },
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "itemsPrice": 69.98,
+      "shippingPrice": 0,
+      "discountPrice": 0,
+      "totalPrice": 69.98,
+      "orderStatus": "Placed",
+      "trackingTimeline": [
+        {
+          "status": "Placed",
+          "title": "Order Confirmed",
+          "description": "Your pure botanical order has been verified and received into our queue.",
+          "location": "Eco Botanical Center",
+          "timestamp": "2026-11-13T11:22:48.858Z",
+          "completed": true
+        },
+        {
+          "status": "Processing",
+          "title": "Formulation & Freshness QC",
+          "description": "Items inspected for batch freshness and natural ingredient purity.",
+          "location": "Central Apothecary Lab",
+          "timestamp": "2026-11-13T23:22:48.858Z",
+          "completed": false
+        },
+        {
+          "status": "Packed",
+          "title": "Eco-Friendly Packaged",
+          "description": "Carefully wrapped in biodegradable honeycomb paper and sealed with organic botanical wax.",
+          "location": "Zero-Waste Fulfillment Hub",
+          "timestamp": "2026-11-14T11:22:48.858Z",
+          "completed": false
+        },
+        {
+          "status": "Shipped",
+          "title": "In Transit with Green Courier",
+          "description": "Dispatched via carbon-offset delivery network towards your destination.",
+          "location": "Regional Hub",
+          "timestamp": "2026-11-15T11:22:48.858Z",
+          "completed": false
+        },
+        {
+          "status": "Out for Delivery",
+          "title": "Out for Delivery",
+          "description": "Courier partner is out on the route to deliver your package.",
+          "location": "Local Delivery Station",
+          "timestamp": "2026-11-16T11:22:48.858Z",
+          "completed": false
+        },
+        {
+          "status": "Delivered",
+          "title": "Delivered",
+          "description": "Organic package delivered safely to your doorstep.",
+          "location": "Customer Address",
+          "timestamp": "2026-11-16T23:22:48.858Z",
+          "completed": false
+        }
+      ],
+      "estimatedDelivery": "2026-11-17T11:22:48.858Z",
+      "notes": "",
+      "createdAt": "2026-11-13T11:22:48.858Z"
+    },
+    {
+      "_id": "ord_demo_001",
+      "orderId": "NAT-20261113-1001",
+      "user": "usr_demo_002",
+      "customerName": "Elena Vance",
+      "customerEmail": "elena@naturalis.com",
+      "customerPhone": "+91 91234 56789",
+      "orderItems": [
+        {
+          "product": "prod_nat_001",
+          "name": "Rosehip & Jojoba Radiant Face Oil",
+          "qty": 1,
+          "price": 34.99,
+          "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bgGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FBF9F5%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23F1ECE1%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bottleGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%232D5A27%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%233F7538%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22softShadow%22%20x%3D%22-10%25%22%20y%3D%22-10%25%22%20width%3D%22130%25%22%20height%3D%22130%25%22%3E%0A%20%20%20%20%20%20%20%20%3CfeDropShadow%20dx%3D%220%22%20dy%3D%2218%22%20stdDeviation%3D%2215%22%20flood-color%3D%22%232D3A2F%22%20flood-opacity%3D%220.12%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Background%20--%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22600%22%20rx%3D%2224%22%20fill%3D%22url(%23bgGrad)%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Organic%20Ambient%20Circles%20--%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%22120%22%20r%3D%22140%22%20fill%3D%22%232D5A27%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22480%22%20cy%3D%22460%22%20r%3D%22160%22%20fill%3D%22%23C27351%22%20fill-opacity%3D%220.08%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%2050%20480%20Q%20200%20400%20350%20490%20T%20550%20470%22%20fill%3D%22none%22%20stroke%3D%22%232D5A27%22%20stroke-opacity%3D%220.1%22%20stroke-width%3D%222%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Botanical%20Motif%20Backing%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(180%2C%2080)%20scale(1.2)%22%20opacity%3D%220.15%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C80%20140%20120%2070%20150%2040%20C140%2090%20190%20120%20180%20180%20Z%22%20fill%3D%22%232D5A27%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C60%20160%2030%20110%2050%2060%20C80%2090%2090%20140%20100%20200%20Z%22%20fill%3D%22%233F7538%22%20%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Product%20Pedestal%20Shadow%20--%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22300%22%20cy%3D%22485%22%20rx%3D%22140%22%20ry%3D%2222%22%20fill%3D%22%232E382F%22%20opacity%3D%220.12%22%20filter%3D%22blur(8px)%22%20%2F%3E%0A%0A%20%20%20%20%3C!--%20Central%20Product%20Presentation%20--%3E%0A%20%20%20%20%3Cg%20filter%3D%22url(%23softShadow)%22%3E%0A%20%20%20%20%20%20%3C!--%20Main%20Vessel%20Container%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22220%22%20y%3D%22210%22%20width%3D%22160%22%20height%3D%22240%22%20rx%3D%2230%22%20fill%3D%22url(%23bottleGrad)%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Bottle%20Neck%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22260%22%20y%3D%22165%22%20width%3D%2280%22%20height%3D%2250%22%20rx%3D%2210%22%20fill%3D%22%233F7538%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Dropper%20%2F%20Cap%20Top%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22275%22%20y%3D%22125%22%20width%3D%2250%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%232B362A%22%20%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22115%22%20r%3D%2218%22%20fill%3D%22%23425540%22%20%2F%3E%0A%0A%20%20%20%20%20%20%3C!--%20Aesthetic%20Label%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22235%22%20y%3D%22245%22%20width%3D%22130%22%20height%3D%22170%22%20rx%3D%2212%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%220.95%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C!--%20Label%20Graphic%20Elements%20--%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22275%22%20r%3D%2214%22%20fill%3D%22%23C27351%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M300%20266%20C293%20274%20300%20282%20300%20286%20C300%20282%20307%20274%20300%20266%20Z%22%20fill%3D%22%23C27351%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-family%3D%22'Playfair%20Display'%2C%20Georgia%2C%20serif%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3EROSEHIP%20OIL%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22328%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22600%22%20fill%3D%22%23C27351%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%221.5%22%3E100%25%20ORGANIC%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22265%22%20y1%3D%22340%22%20x2%3D%22335%22%20y2%3D%22340%22%20stroke%3D%22%23E2DCD2%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22360%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%228%22%20fill%3D%22%236B786E%22%20text-anchor%3D%22middle%22%3EGolden%20Botanical%20Eli%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22390%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ENATURALIS%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Floating%20Herb%20Leaf%20Decoration%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(420%2C%20260)%20rotate(25)%22%20opacity%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2040%20C-20%2020%20-15%20-15%2020%20-30%20C25%205%2010%2030%200%2040%20Z%22%20fill%3D%22%232D5A27%22%20opacity%3D%220.6%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2240%22%20x2%3D%2216%22%20y2%3D%22-22%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221.5%22%20opacity%3D%220.5%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(130%2C%20360)%20rotate(-35)%22%20opacity%3D%220.7%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2030%20C-15%2015%20-10%20-10%2015%20-20%20C18%203%208%2022%200%2030%20Z%22%20fill%3D%22%23C27351%22%20opacity%3D%220.7%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fsvg%3E"
+        },
+        {
+          "product": "prod_nat_004",
+          "name": "High-Altitude French Lavender Calming Essential Oil",
+          "qty": 1,
+          "price": 19.5,
+          "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bgGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FBF9F5%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23F1ECE1%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bottleGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%236E688A%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%234F496B%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22softShadow%22%20x%3D%22-10%25%22%20y%3D%22-10%25%22%20width%3D%22130%25%22%20height%3D%22130%25%22%3E%0A%20%20%20%20%20%20%20%20%3CfeDropShadow%20dx%3D%220%22%20dy%3D%2218%22%20stdDeviation%3D%2215%22%20flood-color%3D%22%232D3A2F%22%20flood-opacity%3D%220.12%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Background%20--%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22600%22%20rx%3D%2224%22%20fill%3D%22url(%23bgGrad)%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Organic%20Ambient%20Circles%20--%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%22120%22%20r%3D%22140%22%20fill%3D%22%236E688A%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22480%22%20cy%3D%22460%22%20r%3D%22160%22%20fill%3D%22%238FA888%22%20fill-opacity%3D%220.08%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%2050%20480%20Q%20200%20400%20350%20490%20T%20550%20470%22%20fill%3D%22none%22%20stroke%3D%22%236E688A%22%20stroke-opacity%3D%220.1%22%20stroke-width%3D%222%22%20%2F%3E%0A%20%20%20%20%0A%20%20%20%20%3C!--%20Botanical%20Motif%20Backing%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(180%2C%2080)%20scale(1.2)%22%20opacity%3D%220.15%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C80%20140%20120%2070%20150%2040%20C140%2090%20190%20120%20180%20180%20Z%22%20fill%3D%22%236E688A%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%20200%20C60%20160%2030%20110%2050%2060%20C80%2090%2090%20140%20100%20200%20Z%22%20fill%3D%22%234F496B%22%20%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Product%20Pedestal%20Shadow%20--%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22300%22%20cy%3D%22485%22%20rx%3D%22140%22%20ry%3D%2222%22%20fill%3D%22%232E382F%22%20opacity%3D%220.12%22%20filter%3D%22blur(8px)%22%20%2F%3E%0A%0A%20%20%20%20%3C!--%20Central%20Product%20Presentation%20--%3E%0A%20%20%20%20%3Cg%20filter%3D%22url(%23softShadow)%22%3E%0A%20%20%20%20%20%20%3C!--%20Main%20Vessel%20Container%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22220%22%20y%3D%22210%22%20width%3D%22160%22%20height%3D%22240%22%20rx%3D%2230%22%20fill%3D%22url(%23bottleGrad)%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Bottle%20Neck%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22260%22%20y%3D%22165%22%20width%3D%2280%22%20height%3D%2250%22%20rx%3D%2210%22%20fill%3D%22%234F496B%22%20%2F%3E%0A%20%20%20%20%20%20%3C!--%20Dropper%20%2F%20Cap%20Top%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22275%22%20y%3D%22125%22%20width%3D%2250%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%232B362A%22%20%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22115%22%20r%3D%2218%22%20fill%3D%22%23425540%22%20%2F%3E%0A%0A%20%20%20%20%20%20%3C!--%20Aesthetic%20Label%20--%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22235%22%20y%3D%22245%22%20width%3D%22130%22%20height%3D%22170%22%20rx%3D%2212%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%220.95%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C!--%20Label%20Graphic%20Elements%20--%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22275%22%20r%3D%2214%22%20fill%3D%22%238FA888%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M300%20266%20C293%20274%20300%20282%20300%20286%20C300%20282%20307%20274%20300%20266%20Z%22%20fill%3D%22%238FA888%22%20%2F%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-family%3D%22'Playfair%20Display'%2C%20Georgia%2C%20serif%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3EPURE%20LAVENDER%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22328%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22600%22%20fill%3D%22%238FA888%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%221.5%22%3E100%25%20ORGANIC%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22265%22%20y1%3D%22340%22%20x2%3D%22335%22%20y2%3D%22340%22%20stroke%3D%22%23E2DCD2%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22360%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%228%22%20fill%3D%22%236B786E%22%20text-anchor%3D%22middle%22%3ETherapeutic%20Grade%20Oi%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22390%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20Arial%2C%20sans-serif%22%20font-size%3D%229%22%20font-weight%3D%22bold%22%20fill%3D%22%232B3B2B%22%20text-anchor%3D%22middle%22%3ENATURALIS%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fg%3E%0A%0A%20%20%20%20%3C!--%20Floating%20Herb%20Leaf%20Decoration%20--%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(420%2C%20260)%20rotate(25)%22%20opacity%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2040%20C-20%2020%20-15%20-15%2020%20-30%20C25%205%2010%2030%200%2040%20Z%22%20fill%3D%22%236E688A%22%20opacity%3D%220.6%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2240%22%20x2%3D%2216%22%20y2%3D%22-22%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221.5%22%20opacity%3D%220.5%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(130%2C%20360)%20rotate(-35)%22%20opacity%3D%220.7%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2030%20C-15%2015%20-10%20-10%2015%20-20%20C18%203%208%2022%200%2030%20Z%22%20fill%3D%22%238FA888%22%20opacity%3D%220.7%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fsvg%3E"
+        }
+      ],
+      "shippingAddress": {
+        "street": "45 Green Meadow Lane",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "postalCode": "641001",
+        "country": "India"
+      },
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "itemsPrice": 54.49,
+      "shippingPrice": 0,
+      "discountPrice": 5,
+      "totalPrice": 49.49,
+      "orderStatus": "Shipped",
+      "trackingTimeline": [
+        {
+          "status": "Placed",
+          "title": "Order Confirmed",
+          "description": "Your pure organic order has been verified and received.",
+          "location": "Eco Botanical Center",
+          "timestamp": "2026-11-11T23:13:01.441Z",
+          "completed": true
+        },
+        {
+          "status": "Processing",
+          "title": "Formulation & QC Passed",
+          "description": "Items inspected for batch freshness and natural purity.",
+          "location": "Central Apothecary Lab",
+          "timestamp": "2026-11-12T11:13:01.441Z",
+          "completed": true
+        },
+        {
+          "status": "Packed",
+          "title": "Eco-Friendly Packaged",
+          "description": "Carefully wrapped in biodegradable honeycomb paper and sealed with organic wax.",
+          "location": "Zero-Waste Fulfillment Center",
+          "timestamp": "2026-11-12T21:13:01.441Z",
+          "completed": true
+        },
+        {
+          "status": "Shipped",
+          "title": "In Transit with Green Courier",
+          "description": "Dispatched on low-emission route towards your city destination.",
+          "location": "Regional Botanical Hub",
+          "timestamp": "2026-11-13T07:13:01.441Z",
+          "completed": true
+        },
+        {
+          "status": "Out for Delivery",
+          "title": "Out for Delivery",
+          "description": "Courier agent will deliver by today evening.",
+          "location": "Coimbatore Local Delivery Station",
+          "timestamp": "2026-11-14T05:13:01.441Z",
+          "completed": false
+        },
+        {
+          "status": "Delivered",
+          "title": "Delivered",
+          "description": "Package handed over to recipient.",
+          "location": "Customer Address",
+          "timestamp": "2026-11-14T11:13:01.441Z",
+          "completed": false
+        }
+      ],
+      "estimatedDelivery": "2026-11-14T11:13:01.441Z",
+      "createdAt": "2026-11-11T23:13:01.441Z"
+    }
+  ],
+  "contacts": [
+    {
+      "_id": "cnt_001",
+      "name": "Aria Sharma",
+      "email": "aria@example.com",
+      "subject": "Wholesale & Eco-friendly Gifting",
+      "message": "Hello, do you offer customized organic skincare gift sets for corporate wellness events?",
+      "status": "New",
+      "createdAt": "2026-11-13T11:13:01.441Z"
+    }
+  ]
+}

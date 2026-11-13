@@ -1,0 +1,23 @@
+{
+  "name": "natural-ecommerce-mern",
+  "version": "1.0.0",
+  "description": "Full MERN Stack E-Commerce Platform for Natural & Organic Products",
+  "scripts": {
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm run dev",
+    "seed": "cd backend && npm run seed",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "mern",
+    "ecommerce",
+    "natural-products",
+    "organic",
+    "mongodb",
+    "react",
+    "express",
+    "node"
+  ],
+  "author": "Naturalis Development Team",
+  "license": "MIT"
+}
