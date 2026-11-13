@@ -1,4 +1,9 @@
-const BASE_URL = '/api';
+// Connects to Render backend in production, or uses local Vite proxy in development
+const API_ORIGIN =
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.PROD ? 'https://naturails-backend.onrender.com' : '');
+
+const BASE_URL = API_ORIGIN ? `${API_ORIGIN.replace(/\/$/, '')}/api` : '/api';
 
 const getAuthHeaders = () => {
   const token = localStorage.getItem('naturalis_token');
